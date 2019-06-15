@@ -11,6 +11,7 @@ router.get("/:pid/:size", (req, res) => {
   if (sizeBuilder[1]) {
     size += sizeBuilder[1];
   }
+  size = size.padEnd(3, "0");
   res.redirect(
     "https://www.offspring.co.uk/view/product/offspring_catalog/5,22/" +
       pid +
