@@ -10,4 +10,7 @@ routesHandlers.forEach(route => {
   app.use("/" + route.split(".")[0], require(ROUTES_LOC + "/" + route));
 });
 
+app.get("/", (req, res) => {
+  res.redirect("https://cursedcooks.io/");
+});
 app.listen(8080);
