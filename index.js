@@ -11,6 +11,6 @@ routesHandlers.forEach(route => {
 });
 
 app.get("/", (req, res) => {
-  res.redirect("https://cursedcooks.io/");
+  res.redirect("YOUR DOMAIN HERE");
 });
 app.listen(8080);
